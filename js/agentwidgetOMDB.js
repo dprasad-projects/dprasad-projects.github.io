@@ -1,5 +1,4 @@
-var updateCallback = function(data) 
-{
+var updateCallback = function(data) {
 	console.log("***updateCallback****"); // Do something with the returning data//
 	console.log(JSON.stringify(data)); //
 
@@ -42,3 +41,6 @@ var updateCallback = function(data)
 
 	}
 };
+
+lpTag.agentSDK.bind(updateCallback);
+  

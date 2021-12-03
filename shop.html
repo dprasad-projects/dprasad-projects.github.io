@@ -35,16 +35,19 @@
 		{
 			console.log("Identify function is called");
 			callback({
-					sub: '+972-3-5555-555',
-					iss: 'https://idp.liveperson.net',
-					acr: 'loa1'
+					  "sub": "1234567893453h75",
+					  "name": "Durga Prasad",
+					  "iat": 1516234022,
+					  "exp": 1516434022,
+					  "iss": "https://idp.liveperson.net",
+					  "acr": "loa1"
 				});
 		}
 		
 		function lpAuthenticate(callback)
 		{
 			console.log("Authenticate function is called");
-			const jwt = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIrOTcyLTMtNTU1NS01NTUiLCJpc3MiOiJodHRwczovL2lkcC5saXZlcGVyc29uLm5ldCIsImF1ZCI6ImFjYzpxYTU3MjIxNjc2IiwiZXhwIjoxOTM0OTcxOTMwLCJpYXQiOjE1MjE2MDU1OTIsIm5hbWUiOiJFaXRhbiJ9.0g9ZMvdNelMc2BICMEep90gnnv9InORIhVb2XcD7DCQRInmyPRzBBGbXxJQeTqymbopGio4f9CE2zPvY0fgBVnWntsr3i_dng3nqYuNym5Sc-pU5EHqMuwmVI3sdRsTvBqe1T44qu3FXRkt-BhnzKXELtueGaBUNQz8k_30R1ms";
+			const jwt = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkzNDUzaDc1IiwibmFtZSI6IkR1cmdhIFByYXNhZCIsImlhdCI6MTUxNjIzNDAyMiwiZXhwIjoxNTE2NDM0MDIyLCJpc3MiOiJodHRwczovL2lkcC5saXZlcGVyc29uLm5ldCIsImFjciI6ImxvYTEifQ.qAWvB4SItTo1pcO-yEz9fEz-AneZegQhBZ_q7-aJ-OYvn5VU0cOLW89nKd4LvE65rQTxot-PMZrruT6ml82-Sa5kqCrRMO4CsTfZwm1HThVFMWtTJyAIL0GWQyB9M3brPH3iZOY5x6Ehdu-EinVnkQ91OntMHMGEOmjHigDcxDcpGtoubZxuc_qCeGQH9CEiH0sElSV186mr5u3PJNDLDIp_zWKIqBuVLk0TLPUPMIeDsoRJrYrBYEztHJlftgMS31CgdnikTlxXb7VWk80oXhXIUMMfsS9Em9rzU08EhkBKj67d3JWWkAC-zqWAtbyDeCuvSNfq3uGGhVcSSib3fA";
 			callback(jwt);
 		}		
 	

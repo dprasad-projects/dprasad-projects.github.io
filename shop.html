@@ -34,11 +34,13 @@
 		function identityFn(callback)
 		{
 			console.log("Identify function is called");
-			callback({
-					sub: '+972-3-5555-555',
-					iss: 'https://idp.liveperson.net',
-					acr: 'loa1'
-				});
+			callback(
+			{
+				sub: '+972-3-5555-555',
+				iss: 'https://idp.liveperson.net',
+				acr: 'loa1'
+			}
+			);
 		}
 		
 		function lpAuthenticate(callback)

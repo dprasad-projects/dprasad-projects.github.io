@@ -42,5 +42,6 @@ var updateCallback = function(data) {
 	}
 };
 
-lpTag.agentSDK.init(updateCallback);
-  
+lpTag.agentSDK.init({
+    VisitorUpdateCallback: updateCallback
+});

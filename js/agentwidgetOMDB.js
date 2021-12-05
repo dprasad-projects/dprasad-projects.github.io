@@ -42,5 +42,5 @@ var updateCallback = function(data) {
 	}
 };
 
-lpTag.agentSDK.bind(updateCallback);
+lpTag.agentSDK.init(updateCallback);
   

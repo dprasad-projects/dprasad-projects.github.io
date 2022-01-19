@@ -1,4 +1,3 @@
-var path = data.key;
 pathToData = "chatTranscript.lines";
 var updateCallback = function(data) {
 console.log("***updateCallback****"); // Do something with the returning data//
